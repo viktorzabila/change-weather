@@ -1,0 +1,54 @@
+.chartContainer {
+  width: 453px;
+  height: 432px;
+  border-radius: 16px;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  flex-direction: column;
+
+  .analytics {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Helvetica';
+    line-height: 24px;
+  }
+
+  .values {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Helvetica';
+    line-height: 14px;
+  }
+
+  .chartText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: auto;
+    margin-top: 30px;
+    span {
+      color: #fff;
+      margin-left: 20px;
+      margin-right: auto;
+      &:last-child {
+        font-size: 12px;
+        position: relative;
+        margin-right: 60px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: #adea57;
+          left: -15px;
+          top: 1px;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
